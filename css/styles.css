@@ -27,7 +27,7 @@ header {
     display: flex;
     background-color: #161616;
     border-radius: 30px;
-
+    margin-bottom: 7%;
 }
 
 .banner-texts {
@@ -141,4 +141,33 @@ header {
 
 .section-area .blogs .matches .details p {
     margin: 0 auto;
+    color: #4D4D4D;
+}
+
+
+
+/* --------------- footer styling -------------- */
+footer {
+    background-color: #161616;
+    text-align: center;
+    margin: 0%;
+    padding: 2%;
+    color: white;
+}
+
+footer h2 {
+    font-size: 40px;
+}
+
+footer hr {
+    width: 80%;
+    border-top: white;
+    opacity: 30%;
+}
+
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: #B9B9B9;
+    margin: 5% 2% 10%;
 }
