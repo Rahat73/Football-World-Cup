@@ -28,13 +28,12 @@ p {
 /* ---------------- header section styling --------------- */
 header {
     margin: 3% 8%;
-    max-width: 1320px;
-    max-height: 645px;
     display: flex;
     background-color: #161616;
     border-radius: 30px;
     margin-bottom: 7%;
 }
+
 
 .banner-texts {
     width: 50%;
@@ -65,18 +64,18 @@ header {
 .banner-img {
     margin: 3% 0% 0% 3%;
     width: 50%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .banner-img img {
-    width: auto;
-    height: 100%;
-    object-fit: contain;
+    width: 90%;
+    height: auto;
 }
 
 /* -------------------- section 2 styling ------------------- */
 .section-area {
-    margin: 3% 8% 8% 8%;
-    max-width: 1320px;
+    margin: 3% 8% 7% 8%;
     display: flex;
     justify-content: center;
 }
@@ -158,6 +157,19 @@ header {
     color: #4D4D4D;
 }
 
+.view-all-btn {
+    padding: 1% 2%;
+    background-color: #DD0000;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    visibility: hidden;
+}
 
 /* --------------- blogs styling ---------------- */
 
@@ -247,4 +259,49 @@ footer .social-links {
 footer .social-links i {
     color: white;
     font-size: xx-large;
+}
+
+
+/* --------------------- responsive media query --------------------- */
+@media screen and (max-width: 992px) and (min-width: 689px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    /* -------------------- section 2 styling ------------------- */
+    .section-area {
+        margin: 3% 8% 8% 8%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* ---------------- navigation menu styling --------------- */
+
+    .section-area .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+        background-color: white;
+        border-radius: 10px;
+        padding: 0%;
+        margin-right: 0;
+    }
+
+    .section-area .upcomingMatches {
+        width: 100%;
+        display: grid;
+        justify-content: space-evenly;
+        Grid-template-columns: repeat(2, 1fr);
+        column-gap: 3%;
+        row-gap: 3%;
+    }
+
+    .view-all-btn {
+        visibility: visible;
+        margin-bottom: 10%;
+    }
+
 }
