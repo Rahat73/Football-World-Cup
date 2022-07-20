@@ -264,11 +264,11 @@ footer .social-links {
 
 footer .social-links i {
     color: white;
-    font-size: xx-large;
+    font-size: 30px;
 }
 
 
-/* --------------------- responsive media query --------------------- */
+/* --------------------- responsive media query for tablet --------------------- */
 @media screen and (max-width: 992px) and (min-width: 689px) {
 
     h1 {
@@ -305,14 +305,116 @@ footer .social-links i {
         row-gap: 3%;
     }
 
+    .section-area .blogs {
+        width: 100%;
+        display: grid;
+        justify-content: space-evenly;
+        Grid-template-columns: repeat(2, 1fr);
+        column-gap: 2%;
+        row-gap: 2%;
+    }
+
     .view-all-btn {
+        margin-top: 20%;
         visibility: visible;
         margin-bottom: 10%;
     }
 
     footer .links {
-        width: 70%;
+        width: 75%;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+
+/* --------------------------- responsive media query for mobiles ------------------------- */
+
+@media screen and (max-width: 688px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    header {
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 7%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner-texts {
+        width: 50%;
+        margin: 5% 0% 5%;
+        color: white;
+    }
+
+    .banner-texts p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    /* -------------------- section 2 styling ------------------- */
+    .section-area {
+        margin: 3% 8% 8% 8%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* ---------------- navigation menu styling --------------- */
+
+    .section-area .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: none;
+        background-color: white;
+        border-radius: 10px;
+        padding: 0%;
+        margin-right: 0;
+    }
+
+    .section-area .upcomingMatches {
+        width: 100%;
+        display: grid;
+        justify-content: space-evenly;
+        Grid-template-columns: repeat(1, 1fr);
+        row-gap: 2%;
+    }
+
+    .section-area .blogs {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        justify-content: space-evenly;
+        Grid-template-columns: repeat(1, 1fr);
+        row-gap: 1%;
+    }
+
+    .section-area .nav a.nav-button {
+        text-decoration: none;
+        border: none;
+        background-color: white;
+        color: black;
+        margin: 2% 0%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        margin-top: 40%;
+    }
+
+    footer .links {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
