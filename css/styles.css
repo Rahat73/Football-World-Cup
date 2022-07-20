@@ -4,6 +4,7 @@
 /* ---------------- common styles ---------------- */
 body {
     font-family: 'Poppins', sans-serif;
+    margin: 0%;
 }
 
 h1 {
@@ -12,6 +13,11 @@ h1 {
 
 h4 {
     font-size: 20px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -69,12 +75,13 @@ header {
 
 /* -------------------- section 2 styling ------------------- */
 .section-area {
-    margin: 3% 8%;
+    margin: 3% 8% 8% 8%;
     max-width: 1320px;
-    max-height: 645px;
     display: flex;
     justify-content: center;
 }
+
+/* ---------------- navigation menu styling --------------- */
 
 .section-area .nav {
     max-width: 25%;
@@ -92,15 +99,22 @@ header {
     height: 64px;
     text-decoration: none;
     border: none;
-    background-color: #DD0000;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 10px;
     margin: 10% 0%;
     justify-content: center;
     align-items: center;
 }
 
-.section-area .blogs {
+.section-area .nav a.nav-button:hover {
+    background-color: #DD0000;
+    color: white;
+}
+
+/* ------------- upcomingMatches styling ------------- */
+
+.section-area .upcomingMatches {
     width: 75%;
     display: grid;
     justify-content: space-evenly;
@@ -109,25 +123,25 @@ header {
     row-gap: 6%;
 }
 
-.section-area .blogs .matches {
+.section-area .upcomingMatches .matches {
     border: #E8E8E8 solid 1px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
 }
 
-.section-area .blogs .matches .teams {
+.section-area .upcomingMatches .matches .teams {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 10%;
 }
 
-.section-area .blogs .matches .teams img {
+.section-area .upcomingMatches .matches .teams img {
     margin: 5%;
 }
 
-.section-area .blogs .matches .details {
+.section-area .upcomingMatches .matches .details {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -135,20 +149,71 @@ header {
     margin-bottom: 15%;
 }
 
-.section-area .blogs .matches .details h4 {
+.section-area .upcomingMatches .matches .details h4 {
     margin: 0 auto;
 }
 
-.section-area .blogs .matches .details p {
+.section-area .upcomingMatches .matches .details p {
     margin: 0 auto;
     color: #4D4D4D;
 }
 
 
+/* --------------- blogs styling ---------------- */
+
+.section-area .blogs {
+    width: 75%;
+    display: grid;
+    justify-content: space-evenly;
+    Grid-template-columns: repeat(3, 1fr);
+    column-gap: 2%;
+    row-gap: 2%;
+}
+
+.section-area .blogs .blog {
+    border: #E8E8E8 solid 1px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.section-area .blogs .blog .images img {
+    width: 100%;
+}
+
+.section-area .blogs .blog .details {
+    padding: 8% 2%;
+}
+
+.section-area .blogs .blog .details a.button {
+    margin-left: 3.5%;
+    padding: 1.5% 4%;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    border: #161616 solid 1px;
+    border-radius: 3px;
+}
+
+.section-area .blogs .blog .details h5 {
+    margin: 3%;
+}
+
+.section-area .blogs .blog .details .extra-details {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0% 5%;
+    color: #4D4D4D;
+}
+
+.section-area .blogs .blog .details .extra-details p {
+    margin: 0% 10% 0% 2%;
+}
 
 /* --------------- footer styling -------------- */
 footer {
-    background-color: #161616;
+    background-color: black;
     text-align: center;
     margin: 0%;
     padding: 2%;
@@ -165,9 +230,21 @@ footer hr {
     opacity: 30%;
 }
 
-footer a {
+footer .links a {
     display: inline-block;
     text-decoration: none;
     color: #B9B9B9;
-    margin: 5% 2% 10%;
+    margin: 2%;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    margin: 2% 40% 5% 40%;
+}
+
+footer .social-links i {
+    color: white;
+    font-size: xx-large;
 }
