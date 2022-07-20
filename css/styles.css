@@ -242,6 +242,12 @@ footer hr {
     opacity: 30%;
 }
 
+footer .links {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 footer .links a {
     display: inline-block;
     text-decoration: none;
@@ -304,4 +310,9 @@ footer .social-links i {
         margin-bottom: 10%;
     }
 
+    footer .links {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
